@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Pseudovariáveis */
+:root {
+  --verdeMusgo: #606c38;
+  --verdeLodo: #283618;
+  --quaseBranco: #fefae0;
+  --caramelo: #dda15e;
+  --capuccino: #bc6c25;
+}
+
+body {
+  background-color: var(--quaseBranco);
+  color: black;
+}
+
+h1,
+h2,
+h3,
+a,
+p {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 750;
+  color: var(--quaseBranco);
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 2rem 0;
+  font-weight: 750;
+}
+
+p {
+  line-height: 2.5rem; /*espaçamento entre as linhas do parágrafo*/
+  text-align: justify; /*justifica o texto*/
+}
+
+section {
+  width: 97%;
+  margin: 1rem auto;
+}
+
+.logo {
+  border-radius: 50px;
+}
+
+header {
+  background: var(--capuccino);
+  padding: 1rem 2rem;
+  display: flex; /*pega todos os itens e coloca eles na horizontal ou lado a lado*/
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logoEmenu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav ul {
+  list-style: none; /*retirar s bolinhas da lista*/
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--quaseBranco);
+  font-size: 1.1rem;
+  text-decoration: none; /*retira o hiperlink*/
+  font-weight: 700;
+}
+
+nav a:hover {
+  background-color: var(--verdeLodo);
+  padding: 4px 20px;
+  border-radius: 20px;
+}
+
+#about article {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 2rem;
+}
+
+#about img {
+  flex-shrink: 0; /*controla quanto o elemento pode encolher em relação a outros itens dentro de um conteiner flexível, quando o espaço disponível é reduzido. O valor 0 impede que o elemento encolha, enquanto o valor 1 (padrão) permite que ele diminua proporcionalmente conforme o espaço é limitado.*/
+  border-radius: 5rem;
+}
+
+#about p {
+  flex: 1; /*forma abreviada de definir flex-grow (define quanto o item pode crescer): 1 | flex-shrink (controla quanto o item pode encolher): 1 | flex-basis (define um tamanho inicial de um item antes que as regras de crescimento ou encolhimento sejam aplicadas): 0 fazendo com que o elemento cresça e encolha proporcionalmente em relação aos outros itens do conteiner flexivel.*/
+}
+
+#video figure {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
