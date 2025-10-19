@@ -6,15 +6,19 @@
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Laish Rodrigues">
     <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/contato.css">
     <title>Contato</title>
   </head>
 
   <body>
     <!-- Cabeçalho da página -->
     <header>
-      <!-- Título do cabeçalho -->
-        <img src="assets/img/logo.png" width="80" alt="logo">
+      <div class="logoEmenu">
+         <!-- Título do cabeçalho -->
+        <img src="assets/img/logo.png" class="logo" alt="logo">
       <h1>Brisas e Pontos</h1>
+      </div>
+     
 
       <!--Menu de navegação-->
       <nav>
@@ -38,7 +42,7 @@
       <form action="#" method="post" id="formulario">
         <!-- o método post manda pelo corpo da requisição, se usar get ele manda pela barra de navegação, em caso de forms com senha não é recomendado usar get -->
 
-        <div>
+        <div class="alinhar">
           <label for="name">Nome: </label>
           <input
             id="name"
@@ -49,7 +53,7 @@
           <span id="errNome"></span>
         </div>
 
-        <div>
+        <div class="alinhar">
           <label for="email">Email: </label>
           <input
             id="email"
@@ -60,7 +64,7 @@
           <span id="errEmail"></span>
         </div>
 
-        <div>
+        <div class="alinhar">
           <label for="subject">Assunto: </label>
           <input
             id="subject"
@@ -71,7 +75,7 @@
           <span id="errSubject"></span>
         </div>
 
-        <div>
+        <div class="alinhar">
           <label for="message">Mensagem: </label>
           <textarea
             id="message"
@@ -93,8 +97,6 @@
         <!-- iframe trás qualquer conteúdo html externo -->
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.8058654133843!2d-34.878501899999996!3d-8.0189448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18137755499d%3A0x1855b98b39f6982b!2sAv.%20Poe.%20Vin%C3%ADcius%20de%20Morais%2C%20Recife%20-%20PE%2C%2052125-300!5e0!3m2!1spt-BR!2sbr!4v1760478568613!5m2!1spt-BR!2sbr"
-          width="400"
-          height="300"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -106,21 +108,22 @@
     <!-- Rodapé da página -->
     <footer>
       <!-- Seção de contato - Redes sociais -->
-      <section>
-        <a href="">
-          <img src="assets/img/rodapé/wpp.png" width="8.5%" alt="WhatsApp" />
+      <section class="footer">
+        <a href="https://wa.me/55081991626735" target="_blank">
+          <img class="wpp" src="assets/img/rodapé/wpp.png" alt="WhatsApp" />
         </a>
 
-        <a href="">
-          <img src="assets/img/rodapé/gitHub.png" width="10%" alt="GitHub" />
+        <a href="https://www.instagram.com/brisas_e_pontos/" target="_blank">
+          <img class="insta" src="assets/img/rodapé/insta.png" alt="Instagram" />
         </a>
 
-        <a href="">
-          <img src="assets/img/rodapé/insta.png" width="10%" alt="Instagram" />
+        <a href="https://github.com/L4ish/introHTML.git" target="_blank">
+          <img class="gitHub" src="assets/img/rodapé/gitHub.png" alt="GitHub" />
         </a>
+
       </section>
 
-      <h3>🔮 Feito com dedicação, Por Laish Rodrigues - 2025</h3>
+      <h3>🔮 Feito com dedicação, por Laish Rodrigues - 2025</h3>
     </footer>
   </body>
 </html>
